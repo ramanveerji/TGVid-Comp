@@ -15,7 +15,7 @@ async def stats(e):
         out, dl, id = wh.split(";")
         ot = hbs(int(Path(out).stat().st_size))
         ov = hbs(int(Path(dl).stat().st_size))
-        processing_file_name = dl.replace(f"downloads/", "").replace(f"_", " ")
+        processing_file_name = dl.replace("downloads/", "").replace("_", " ")
         ans = f"Processing Media:\n{processing_file_name}\n\nDownloaded:\n{ov}\n\nCompressed:\n{ot}"
         await e.answer(ans, cache_time=0, alert=True)
     except Exception as er:
@@ -53,7 +53,7 @@ async def dl_link(event):
     es = dt.now()
     kk = dl.split("/")[-1]
     aa = kk.split(".")[-1]
-    newFile = dl.replace(f"downloads/", "").replace(f"_", " ")
+    newFile = dl.replace("downloads/", "").replace("_", " ")
     rr = "encode"
     bb = kk.replace(f".{aa}", ".mkv")
     out = f"{rr}/{bb}"

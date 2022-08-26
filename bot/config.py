@@ -13,5 +13,5 @@ try:
     THUMBNAIL = config("THUMBNAIL", default="https://telegra.ph/file/f9e5d783542906418412d.jpg")
 except Exception as e:
     print("Environment vars Missing! Exiting App.")
-    print(str(e))
+    print(e)
     exit(1)

@@ -26,7 +26,7 @@ async def start(event):
 
 async def zylern(event):
     await event.reply(
-        f"""
+        """
 **Available Commands 🤖**
 
 /start - __Check Bot is Working Or Not__
